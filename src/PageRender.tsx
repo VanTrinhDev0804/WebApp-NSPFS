@@ -4,14 +4,26 @@ import { IParams } from './types/index'
 
 
 const generatePage = (name: string) => {
-    const page = () => require(`./pages/${name}`).default;
 
-    try {
-        return React.createElement(page());
-    } catch (error) {
-        return <h2> Not Found</h2>
+    if(name.indexOf('10') === -1){
+        const page = () => require(`./pages/${name}`).default;
+
+        try {
+            return React.createElement(page());
+        } catch (error) {
+            return <h2> Not Found</h2>
+        }
+    
+    }else{
+        const page = () => require(`./pages/`).default;
+
+        try {
+            return React.createElement(page());
+        } catch (error) {
+            return <h2> Not Found</h2>
+        }
     }
-
+ 
 }
 
 const PageRender = () => {

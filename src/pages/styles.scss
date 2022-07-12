@@ -1,0 +1,67 @@
+.HomePage {
+    background-color: #F7F7F7;
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    .HomePage {
+        width: 100%;
+    }
+
+    .Profile {
+        width: 100%;
+        margin: 0;
+
+        // header
+        &-Header {
+            height: 150px;
+
+            &_SubTitle,
+            &_Title {
+                font-size: 24px;    
+                margin-top: 20px;
+            }
+        }
+
+        // Content
+
+        &-Content {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+
+            &_bgAvatar {
+                margin: 30px 24px 0px 24px;
+
+            }
+
+            &_Info {
+                &-Name {
+                    margin-top: 30px;
+                }
+            }
+            &_Description {
+
+                &-Contact,
+                &-Worker {
+                    &_title {
+                        margin-left: 24px;
+                    }
+
+                }
+
+                &-Contact {
+                    margin-top: 50px;
+                }
+            }
+        }
+
+        &-Footer {
+            height: 100px;
+
+        }
+
+
+    }
+
+}

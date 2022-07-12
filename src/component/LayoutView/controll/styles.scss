@@ -1,0 +1,93 @@
+
+
+.ContentThietbi-control {
+    width: 1300px;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    .labelSelecpxt {
+        width: 83px;
+        height: 24px;
+
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #282739;
+        white-space: nowrap;
+    }
+
+    .ant-select {
+        background: #FFFFFF;
+        border: 1.5px solid #D4D4D7;
+        box-sizing: border-box;
+        border-radius: 8px;
+
+    }
+
+    .ant-picker {
+        background: #FFFFFF;
+        /* gray blue/gray 2 - stroke */
+
+        border: 1.5px solid #D4D4D7;
+        box-sizing: border-box;
+        border-radius: 8px;
+
+    }
+
+    .ant-input-group {
+        background: #FFFFFF;
+        /* Gray/$-gray-100 */
+
+        border: 1.5px solid #D4D4D7;
+        box-sizing: border-box;
+        border-radius: 8px;
+    }
+
+    .ant-input-search-button {
+        border: none;
+
+        .anticon-search {
+            color: #FF9138;
+        }
+    }
+
+    // &-dichvu {}
+
+    // &-status {}
+    &-connection {
+        margin-left: 24px;
+    }
+
+  
+
+    &-search {
+        margin-left: 8px;
+       
+    }
+
+
+    &-GroupBtn{
+        display: flex;
+        align-items: baseline;
+    }
+
+    .btn-Them {
+        width: 147px;
+        height: 40px;
+        background: #FFF2E7;
+        border: 1.5px solid #FF9138;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 6px #E7E9F2;
+        border-radius: 8px;
+        color: #FF9138;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+  
+    }
+}

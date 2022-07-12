@@ -1,17 +1,17 @@
+
 import React from 'react'
-import { useParams } from 'react-router-dom'
-import UserProfile from '../component/profile';
-import { IParams } from '../types'
+import Login from '../component/LoginPage/login';
+
+
 // import './styles.scss';
 
 
 const Home = () => {
 
-  const { id }: IParams = useParams();
-  console.log(id)
+
   return (
     <div className="HomePage">
-        <UserProfile/>
+      <Login />
     </div>
 
   )
